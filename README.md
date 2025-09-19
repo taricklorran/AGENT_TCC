@@ -20,7 +20,7 @@ O que você precisa para executar o projeto:
 1.  **Clone o repositório:**
 
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone https://github.com/taricklorran/AGENT_TCC.git
     cd seu-repositorio
     ```
 
@@ -72,24 +72,4 @@ Para executar o projeto, você precisará iniciar o servidor da API e o worker d
     ou use o script de lote:
     ```bash
     run_worker.bat
-    ```
-
-## Docker
-
-Você também pode executar o projeto usando o Docker e o Docker Compose. Certifique-se de que o MongoDB esteja em execução em sua máquina host.
-
-O nome do contêiner Redis é definido como `redis` no arquivo `docker-compose.yml`.
-
-1.  **Construa e inicie os contêineres:**
-
-    ```bash
-    docker-compose up --build
-    ```
-
-    Isso iniciará a API FastAPI, o worker do Dramatiq e o Redis. A aplicação se conectará ao MongoDB em execução na sua máquina host.
-
-2.  **Pare os contêineres:**
-
-    ```bash
-    docker-compose down
     ```
